@@ -1,15 +1,12 @@
-import com.sun.deploy.util.SystemUtils;
-
 import javax.swing.*;
-import java.util.Scanner;
 
 public class Main {
-    public static String nome = "Valteir";
-    public static Integer idade = 22;
+    public static String nome = "Valteir Eleuterio Alvs";
+    public static Integer idade = 39;
     public static Boolean sexoMasculino = true;
-    public static Double peso = 74.54;
-    public static Integer dia = 4;
-    public static String s = sexo(sexoMasculino);
+    public static Double peso = 200.00;
+    public static Integer dia = 9;
+    public static String s = sex(sexoMasculino);
 
     public static void main(String[]args){
         System.out.println("Sexo: "+ s);
@@ -73,7 +70,7 @@ public class Main {
     }
 
     //VALIDA O SEXO
-    public static String sexo(Boolean s){
+    public static String sex(Boolean s){
         if (s == true)
             return "Masculino";
         else
