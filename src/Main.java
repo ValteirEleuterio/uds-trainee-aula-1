@@ -8,24 +8,35 @@ public class Main {
     public static Integer dia = 9;
     public static String s = sex(sexoMasculino);
 
-    public static void main(String[]args){
-        System.out.println("Sexo: "+ s);
+    public static void main(String[]args) {
+        System.out.println("Sexo: " + s);
         System.out.println("Olá, meu nome é " + nome + ",tenho " + idade + " anos de idade");
         System.out.println(CalculaIdade(idade));
         System.out.println(DiaSemana(dia));
+
+
+        for (int i = 1; i <= 10; i++)
+            System.out.println(AlgRomanos(i));
+
+        int i = 1;
+        while (i <= 10){
+            System.out.println(AlgRomanos(i));
+            i++;
+        }
+
 
         /*Scanner scanner = new Scanner(System.in);
         System.out.println("Digite um numero: ");
         int num = scanner.nextInt();
         System.out.println(AlgRomanos(num));*/
 
-        Integer num = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero: "));
+        /*Integer num = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero: "));
         String Resultado = AlgRomanos(num);
         if (Resultado == "Numero inválido")
             JOptionPane.showMessageDialog(null, Resultado);
         else
             JOptionPane.showMessageDialog(null, "O numero " +
-                          + num+ " convertido para numero Romano é "+AlgRomanos(num));
+                          + num+ " convertido para numero Romano é "+AlgRomanos(num));*/
     }
 
     //VERIFICA ALG ROMANOS
